@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Dashboard</title>
+  <link rel="stylesheet" href="/css/account.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <div class="logo">Account Dashboard</div>
+      <nav>
+        <ul>
+          <li><button id="menu-account-details">Account Details</button></li>
+          <li><button id="menu-account-balance">Account Balance</button></li>
+          <!-- <li><button id="menu-update-details">Update Details</button></li> -->
+          <li><button id="menu-transfer-money">Transfer Money</button></li>
+          <li><button id="menu-payee-details">View Payee Details</button></li>
+          <li><button id="menu-account-statement">Get Account Statement</button></li>
+          <li><button id="menu-contact-us">Contact Us</button></li>
+          <!-- Fixed Logout Button at Bottom -->
+          <li><button id="logout-button" onclick="logout()">Logout</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main" id="main-content">
+      <div class="dashboard-body" id="dashboard-content">
+        <div class="main-header">
+          <h1>Welcome Back, Valued Customer!</h1>
+        </div>
+        <p class="datetime" id="datetime"></p>
+        <div class="quick-stats">
+          <div class="stat-card">
+            <p class="bold-text">Check Balance</p>
+          </div>
+          <div class="stat-card">
+            <p class="bold-text">Check Active Accounts</p>
+          </div>
+          <div class="stat-card">
+            <h2>Last Login</h2>
+            <p>29 July 2025, 9:35 AM</p>
+          </div>
+        </div>
+        <blockquote class="quote">
+          “Banking is not just about money, it’s about trust.”
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/js/account.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
